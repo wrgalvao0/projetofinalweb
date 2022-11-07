@@ -4,10 +4,140 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Quiz</title>
-	<script type="text/javascript" src="./js/pagina2.js"></script>
-	<link href="./css/pagina2.css" rel="stylesheet">
+	<script type="text/javascript" src="js/pagina2.js"></script>
+	<link href="css/pagina2.css" rel="stylesheet">
 </head>
 <body>
+
+	<div id="title1">
+	    <p>
+	    <h1 style="font-size: xx-large;">
+	        Quiz das eleições!
+	    </h1>
+	   	<h3>
+	        <a href="pagina1.html">Inicio</a> - <a href="pagina3.html">Próximo</a>
+	    </h3>
+	    </p>
+	</div>
+<form name="quizForm" onsubmit="return false">
+
+ <!-- div para questão 1 -->
+        <div id="q1">
+            <!-- A tag fieldset agrupa itens em um formulário -->
+            <fieldset>
+                <legend style="font-size: x-large;">Pergunta 1: Propagar FakeNews (Noticias Falsas) sobre as eleições	 é permitido?</legend>
+
+                <!-- opção 1 -->
+                <input type="radio" id="correta1" name="opcaoq1">Não, devemos sempre pesquisar e nos manter informados sobre os fatos.<br>
+                <!-- opção 2 -->
+                <input type="radio" name="opcaoq1">Não, mas sempre me informo pelo zap zap.<br>
+
+                <!-- opção 3 -->
+                <input type="radio" name="opcaoq1">Sim, desde que não ofenda ninguém diretamente.<br>
+
+                <!-- opção 4 -->
+                <input type="radio" name="opcaoq1">Depende da situação, se for para o bem, é permitido.<br>
+
+
+            </fieldset>
+        </div>
+
+ <!-- div para questão 2 -->
+        <div id="q2">
+            <!-- A tag fieldset agrupa itens em um formulário -->
+            <fieldset>
+                <legend style="font-size: x-large;">Pergunta 2: Podemos tirar fotos na cabine de votação?</legend>
+
+                <!-- opção 1 -->
+                <input type="radio" id="correta2" name="opcaoq2">Sim, desde que ninguém veja.<br>
+
+                <!-- opção 2 -->
+                <input type="radio" name="opcaoq2">Sim, desde que autorizadas pelos mesários.<br>
+
+                <!-- opção 3 -->
+                <input type="radio" name="opcaoq2">Não, apenas com câmeras profissionais.<br>
+
+                <!-- opção 4 -->
+                <input type="radio" name="opcaoq2">Não, pois a urna pode explodir.<br>
+
+
+            </fieldset>
+        </div>
+
+ <!-- div para questão 3 -->
+        <div id="q3">
+            <!-- A tag fieldset agrupa itens em um formulário -->
+            <fieldset>
+                <legend style="font-size: x-large;">Pergunta 3: As urnas podem mudar seu voto?</legend>
+
+                <!-- opção 1 -->
+                <input type="radio" id="correta3" name="opcaoq3">Impossível, cada passo da votação é criptografado e seguro.<br>
+
+                <!-- opção 2 -->
+                <input type="radio" name="opcaoq3">Segundo alguns hackers coreanos, sim.<br>
+
+                <!-- opção 3 -->
+                <input type="radio" name="opcaoq3">Sim, nas urnas mais antigas.<br>
+
+                <!-- opção 4 -->
+                <input type="radio" name="opcaoq3">Não para leigos.<br>
+
+            </fieldset>
+        </div>
+
+ <!-- div para questão 4 -->
+        <div id="q1">
+            <!-- A tag fieldset agrupa itens em um formulário -->
+            <fieldset>
+                <legend style="font-size: x-large;">Pergunta 4: A partir de qual idade as pessoas podem votar?</legend>
+
+                <!-- opção 1 -->
+                <input type="radio" id="correta4" name="opcaoq4">16 anos.<br>
+
+                <!-- opção 2 -->
+                <input type="radio" name="opcaoq4">18 anos.<br>
+
+                <!-- opção 3 -->
+                <input type="radio" name="opcaoq4">15 anos.<br>
+
+                <!-- opção 4 -->
+                <input type="radio" name="opcaoq4">Desde 1 ano de idade.<br>
+
+
+            </fieldset>
+        </div>
+
+ <!-- div para questão 5 -->
+        <div id="q1">
+            <!-- A tag fieldset agrupa itens em um formulário -->
+            <fieldset>
+                <legend style="font-size: x-large;">Pergunta 5: É possivel 'hackear' as urnas?</legend>
+
+                <!-- opção 1 -->
+                <input type="radio" id="correta5" name="opcaoq5">Não é possível, as urnas contam com sistema de segurança moderno e atualizado!<br>
+
+                <!-- opção 2 -->
+                <input type="radio" name="opcaoq5">Sim, foi provado pelo super hacker Coreano Mijeinas Kalsa<br>
+
+                <!-- opção 3 -->
+                <input type="radio" name="opcaoq5">Não, pois os votos são impressos<br>
+
+                <!-- opção 4 -->
+                <input type="radio" name="opcaoq5">Sim, é possível colocar pendrive na urna<br>
+            </fieldset>
+        </div>
+
+<!-- div box for submit button -->
+<div id="submitbutton">
+    <!-- tag <p> que aparecerá o resultado-->
+    <p id="result1"></p>
+
+    <button type="submit" id="hp" onclick="calcularPontos()"
+        style="padding: 2%; margin: 0 auto; background-color: rgb(250, 133, 141); color: white; border-width: 0	;">Enviar
+        Quiz</button>
+</div>
+    </form>
+
 
 </body>
 </html>

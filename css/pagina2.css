@@ -1,0 +1,59 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+div#title1 {
+
+    font-family: 'Comfortaa', cursive;
+
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+    max-width: 800px;
+    padding: 50px;
+
+    color: white;
+
+    background: #FB8346;
+
+    box-shadow: 0 5px 15px rgba(101, 140, 248, 0.5);
+
+    border-radius: 20px;
+
+}
+
+a {
+    color: rgba(255, 255, 255, 0.596);
+    text-decoration: none;
+}
+
+a:hover {
+ color: white;
+}
+
+div#q1, div#q2, div#q3, div#q4, div#q5{
+    font-family: 'Comfortaa', cursive;
+
+    margin: 10px auto;
+
+    position: relative;
+    max-width: 800px;
+    padding: 50px;
+
+    color: white;
+    background: linear-gradient(180deg, #E8B883 0%, #E98E8F 100%);
+
+    border-radius: 20px;
+}
+
+div#submitbutton {
+
+    font-family: 'Comfortaa', cursive;
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+    max-width: 800px;
+    padding: 50px;
+
+}

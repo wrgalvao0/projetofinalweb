@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Jogo</title>
-	<script type="text/javascript" src="./js/pagina4.js"></script>
-	<link href="./css/pagina4.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Descubra as Palavras</title>
+	<link rel="stylesheet" href="css/pagina4.css">
 </head>
 <body>
-
+	<header id="header">
+		<h2>Descubra as Palavras</h2>
+		<h4 align="center">Veja a frase de exemplo e descubra as palavras escondidas!</h4>
+	</header>
+	<div>
+		<form id="search" data-js="form">
+			<input data-js="search" type="text">
+			<button>Buscar</button>
+		</form>
+	</div>
+	<table id="table">
+		<tbody data-js="tbody">
+			<tr data-js="line0"></tr>
+			<tr data-js="line1"></tr>
+			<tr data-js="line2"></tr>
+			<tr data-js="line3"></tr>
+			<tr data-js="line4"></tr>
+			<tr data-js="line5"></tr>
+			<tr data-js="line6"></tr>
+			<tr data-js="line7"></tr>
+			<tr data-js="line8"></tr>
+			<tr data-js="line9"></tr>
+		</tbody>
+	</table>
+	<div align="center" id="frase"><p>"As Eleições brasileiras são feitas através das urnas eletrônicas, e são um exemplo de segurança, graças ao seu sistema completo, que garante o voto secreto e tem respaudo dos orgãos competentes, como TSE e STF".</p></div>
+	<div align="center"><p><a href="#">Voltar</a> - <a href="#">Avançar</a></p></div>
+	<script src="js/pagina4.js"></script>
 </body>
 </html>
