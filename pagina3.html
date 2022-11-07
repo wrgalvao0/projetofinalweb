@@ -4,10 +4,45 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Estatisticas</title>
-	<script type="text/javascript" src="./js/pagina3.js"></script>
-	<link href="./css/pagina3.css" rel="stylesheet">
+	<script type="text/javascript" src="js/pagina3.js"></script>
+	<link href="css/pagina3.css" rel="stylesheet">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body>
+<div id="navegacao"><p><a href="pagina2.html">Voltar</a> - <a href="pagina4.html">Próximo</a></p></div>
+
+
+<!--Div onde estará o gráfico-->
+<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+
+<div id="myChart2" style="width:100%; max-width:600px; height:500px;"></div>
+
+<script type="text/javascript">
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['População', 'Zona'],
+  [50,7],[60,8],[70,8],[80,9],[90,9],
+  [100,9],[110,10],[120,11],
+  [130,14],[140,14],[150,15]
+]);
+// Set Options
+var options = {
+  title: 'Correspondencias 2 turno',
+  hAxis: {title: 'Correspondencias esperadas'},
+  vAxis: {title: 'Correspondencias efetivadas'},
+  legend: 'none'
+};
+// Draw
+var chart = new google.visualization.ScatterChart(document.getElementById('myChart'));
+chart.draw(data, options);
+
+var chart = new google.visualization.LineChart(document.getElementById('myChart2'));
+chart.draw(data, options);
+}
+</script>
 
 </body>
 </html>

@@ -105,13 +105,19 @@ body{
 	border-spacing: 0;
 }
 
+#navegacao{	
+	margin-bottom: 20px;
+}
+
 a:link {
  color: black;
  text-decoration: none;
+ background: linear-gradient(180deg, #E8B883 0%, #E98E8F 100%);
+ font-size: 25px;
 }
 
 a:hover {
- color: #F00;
+ color: white;
  border: solid;
 }
 
