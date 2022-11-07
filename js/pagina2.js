@@ -116,7 +116,7 @@ function calcularPontos() {
 
 function irParaInicio() {
     // quando clicado, vai para a página inicial
-    window.location.assign("pagina1.html"); //vai para a página de inicio
+    window.location.assign("index.html"); //vai para a página de inicio
 }
 
 function mostrarBotaoInicio() {
