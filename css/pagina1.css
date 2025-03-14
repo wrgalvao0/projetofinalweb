@@ -100,3 +100,9 @@ footer > a:hover
 {
     text-decoration: underline;
 }
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
